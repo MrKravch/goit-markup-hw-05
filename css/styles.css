@@ -346,6 +346,34 @@ ul {
   gap: var(--indent);
 }
 
+.ourwork-item {
+  position: relative;
+}
+
+.ourwork-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.ourwork-overlay-text {
+  font-family: var(--main-font);
+  color: #ffffff;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* Ourteam */
 .ourteam {
   background-color: var(--secondary-white-color);
