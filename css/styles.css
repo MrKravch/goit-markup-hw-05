@@ -25,6 +25,7 @@
   /* Others */
   --indent: 30px;
   --items: 3;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--main-text-color);
@@ -197,6 +198,10 @@ ul {
   color: var(--main-text-color);
 }
 
+.header .link {
+  transition: color var(--timing-function);
+}
+
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
@@ -275,6 +280,8 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
+
+  transition: background-color var(--timing-function);
 }
 
 .button.primary:hover,
@@ -417,6 +424,9 @@ ul {
 
 .socials-link {
   color: #afb1b8;
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .socials-link:hover,
@@ -442,6 +452,8 @@ ul {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: color var(--timing-function), border var(--timing-function);
 }
 
 .clients-link:hover,
@@ -481,6 +493,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition: color var(--timing-function);
 }
 
 .footer .link:hover,
@@ -516,6 +530,9 @@ ul {
 .footer-social-box .socials-link {
   color: var(--main-withe-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .footer-social-box .socials-link:hover,
@@ -544,6 +561,9 @@ ul {
   min-height: 38px;
   border-radius: 4px;
   border: transparent;
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function), ox-shadow var(--timing-function);
 }
 
 .button.secondary:hover,
@@ -583,10 +603,12 @@ ul {
 .examples-link {
   display: block;
   text-decoration: none;
+  transition: box-shadow var(--timing-function);
 }
 
 .examples-thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .examples-overlay {
@@ -596,8 +618,7 @@ ul {
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
 
-  opacity: 0;
-  pointer-events: none;
+  transition: transform var(--timing-function);
 }
 
 .examples-overlay-text {
@@ -612,7 +633,6 @@ ul {
 .examples-link:hover .examples-overlay,
 .examples-link:focus .examples-overlay {
   transform: translateY(-100%);
-  opacity: 1;
 }
 
 .examples-link:hover,
