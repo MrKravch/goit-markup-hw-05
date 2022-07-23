@@ -563,7 +563,7 @@ ul {
   border: transparent;
 
   transition: color var(--timing-function),
-    background-color var(--timing-function), ox-shadow var(--timing-function);
+    background-color var(--timing-function), box-shadow var(--timing-function);
 }
 
 .button.secondary:hover,
